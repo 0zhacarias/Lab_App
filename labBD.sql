@@ -40,7 +40,7 @@ INSERT INTO `laboratorios` (`id`, `designacao`, `funciona`, `nao_funciona`, `tot
 	(2, 'Salas de Informatica', 1, 0, 1, '2024-04-17 06:55:44', '2024-04-17 14:22:31'),
 	(3, 'Laboratório de Automação', 1, 0, 1, '2024-04-17 07:01:27', '2024-04-17 09:42:11'),
 	(4, 'Laboratórios de Biologia', 1, 1, 2, '2024-04-17 08:27:13', '2024-04-17 14:22:31'),
-	(5, 'Laboratórios de CAD', 0, 0, 0, '2024-04-17 09:39:03', '2024-04-17 09:39:03'),
+	(5, 'Laboratórios de CAD', 1, 0, 1, '2024-04-17 09:39:03', '2024-04-17 14:29:44'),
 	(6, 'Laboratórios de CNC', 0, 1, 1, '2024-04-17 10:29:17', '2024-04-17 14:00:58'),
 	(7, 'Laboratórios de Electrónica', 1, 0, 1, '2024-04-17 10:30:23', '2024-04-17 14:00:58'),
 	(8, 'Laboratórios de Energias Renováveis', 0, 1, 1, '2024-04-17 10:32:41', '2024-04-17 10:32:41'),
