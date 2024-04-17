@@ -20,13 +20,13 @@
             <div class="flex justify-content-end gap-2">
                 <Button
                     type="button"
-                    label="Cancel"
+                    label="Cancelar"
                     severity="secondary"
                     @click="visible = false"
                 ></Button>
                 <Button
                     type="button"
-                    label="Save"
+                    label="Salvar"
                     @click="adicionarLaboratotio()"
                 ></Button>
             </div>
@@ -90,7 +90,7 @@
         </DataTable>
 
     <div class="card flex justify-content-center">
-        <Button label="Atualizar" />
+        <Button label="Atualizar"   @click="actualizarLaboratotio()" ></Button>
     </div>
 
     </div>
@@ -125,18 +125,13 @@ const adicionarLaboratotio = () => {
     vazio.value = true;
   }
 
-  /*   axios
-        .delete(`/Gestao_de_Fornecedores/Fornecedores/${editProduct.id}`)
-        .then((response) => {
-            console.log(`Deleted post with ID ${editProduct.id}`);
-        })
-        .catch((error) => {
-            console.error(error);
-        }); */
-
-    /* product.value = editProduct;
-    deleteProductDialog.value = true; */
 };
+const actualizarLaboratotio = () =>{
+    alert(JSON.stringify(laboratorios))
+    router.post("/criar_laboratorio", {
+        designacao:designacao.value
+    })
+  }
 </script>
 <!--
 <template>
