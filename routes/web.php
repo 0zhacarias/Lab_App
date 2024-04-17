@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Route::get('/', function () {
+    return Inertia::render('Index');
+});*/
+Route::get('/',[App\Http\Controllers\LaboratoriosController::class,'index']);
+Route::post('/criar_laboratorio',[App\Http\Controllers\LaboratoriosController::class,'criar_laboratorio']);
