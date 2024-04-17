@@ -3,9 +3,9 @@
     <div class="left-column">
     </div>
     <div class="right-column">
-        <div class="justify-content-center ">
+        <div class="justify-content-center">
             <div class="card flex justify-content-center">
-                <h1 >Editar [Designação da Escola]</h1>
+                <h1>LISTA DAS SALAS</h1>
                 <DataTable class="custom-datatable"
 
                     :value="laboratorios"
@@ -58,7 +58,7 @@
                             <!-- <InputNumber for="integeronly"  v-model="rowData.code" inputId="integeronly" /> -->
                         </template>
                     </Column>
-                    <Column field="designacao" header="Número total" :headerStyle="{ backgroundColor: '#C4C4C4' }">
+                    <Column field="designacao" header="Numero total" :headerStyle="{ backgroundColor: '#C4C4C4' }">
                         <template #body="slotProps">
                             <InputNumber
                                 v-model="slotProps.data.total"
@@ -72,7 +72,7 @@
                         </template>
                     </Column>
                 </DataTable>
-                <div class="card" style="text-align: right; margin-top: 10px; ">
+                <div class="card" style="text-align: right">
                     <Button
                     class="custom-button"
                         label="Atualizar"
@@ -83,62 +83,7 @@
         </div>
     </div>
   </div>
- <Dialog
-            v-model:visible="visible"
-            header="Cadastrar Salas"
-            :style="{ width: '25rem' }"
-        >
-            <div class="card flex justify-content-center">
-                <div class="flex flex-column gap-3">
-                    <InputText
-                        :style="{ width: '20rem' }"
-                        v-model="designacao"
-                        autocomplete="on"
-                        placeholder="Descrição do campo da sala"
-                    /><br />
-                    <small v-if="vazio">Campo Obrigatório</small>
-                </div>
-                <div class=" flex-centro flex-column gap-3">
-                    <InputNumber
-                        :style="{ width: '20rem' }"
-                        v-model="funciona"
-                        autocomplete="on"
-                        :min="0"
-                            :max="100"
-                        placeholder="Sala funcional"
-                    /><br />
 
-                </div>
-                <div class="flex flex-column gap-3">
-                    <InputNumber
-                        :style="{ width: '20rem' }"
-                        v-model="nao_funciona"
-                        autocomplete="on"
-                        :min="0"
-                                :max="100"
-                        placeholder="Sala nao funcional"
-                    /><br />
-
-                </div>
-
-            </div>
-
-            <div class="flex justify-content-end gap-3">
-                <Button
-                    class="p-mr-2"
-                    type="button"
-                    label="Cancelar"
-                    severity="secondary"
-                    @click="visible = false"
-                ></Button>
-                <Button
-                    class="p-mr-2 custom-button"
-                    type="button"
-                    label="Salvar"
-                    @click="adicionarLaboratotio()"
-                ></Button>
-            </div>
-        </Dialog>
 
     <Toast />
 </template>
@@ -247,7 +192,6 @@ width: 100px;
 
 .right-column {
     margin-right: 90px;
-    margin-top: 50px;
   flex-grow: 1; /* Aumenta para preencher o espaço restante */
 
 }

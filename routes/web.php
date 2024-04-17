@@ -14,8 +14,7 @@ use Inertia\Inertia;
 |
 */
 
-/*Route::get('/', function () {
-    return Inertia::render('Index');
-});*/
+
 Route::get('/',[App\Http\Controllers\LaboratoriosController::class,'index']);
 Route::post('/criar_laboratorio',[App\Http\Controllers\LaboratoriosController::class,'criar_laboratorio']);
+Route::post('/editar_laboratorio',[App\Http\Controllers\LaboratoriosController::class,'editar_laboratorio']);
