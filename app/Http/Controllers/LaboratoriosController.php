@@ -28,6 +28,7 @@ class LaboratoriosController extends Controller
             'designacao' => $request['designacao'],
             'funciona' => $request['funciona'],
             'nao_funciona' => $request['nao_funciona'],
+            'total' => $request['funciona'] + $request['nao_funciona'],
         ]);
     }
     public function editar_laboratorio(Request $request)
