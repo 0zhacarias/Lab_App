@@ -22,8 +22,8 @@
                             />
                         </div>
                     </template>
-                    <Column field="designacao" header="Designação" :headerStyle="{ backgroundColor: '#C4C4C4' } " ></Column>
-                    <Column field="funciona" header="Funcionais" :headerStyle="{ backgroundColor: '#C4C4C4' }">
+                    <Column field="designacao" header="Designação" :headerStyle="{ backgroundColor: '#C4C4C4' } " style="background-color: #EAEAEA; border: 1px solid #A0A0AA;" ></Column>
+                    <Column field="funciona" header="Funcionais" :headerStyle="{ backgroundColor: '#C4C4C4' }" style="background-color: #EAEAEA; border: 1px solid #A0A0AA;">
                         <template #body="slotProps">
                             <InputNumber
                                 :disabled="
@@ -41,7 +41,7 @@
                         </template>
                     </Column>
 
-                    <Column field="designacao" header="Não funcionais" :headerStyle="{ backgroundColor: '#C4C4C4' }">
+                    <Column field="designacao" header="Não funcionais" :headerStyle="{ backgroundColor: '#C4C4C4' }" style="background-color: #EAEAEA; border: 1px solid #A0A0AA;">
                         <template #body="slotProps">
                             <InputNumber
                                 :disabled="
@@ -58,7 +58,7 @@
                             <!-- <InputNumber for="integeronly"  v-model="rowData.code" inputId="integeronly" /> -->
                         </template>
                     </Column>
-                    <Column field="designacao" header="Número total" :headerStyle="{ backgroundColor: '#C4C4C4' }">
+                    <Column field="designacao" header="Número total" :headerStyle="{ backgroundColor: '#C4C4C4' }" style="background-color: #EAEAEA; border: 1px solid #A0A0AA;">
                         <template #body="slotProps">
                             <InputNumber
                                 v-model="slotProps.data.total"
